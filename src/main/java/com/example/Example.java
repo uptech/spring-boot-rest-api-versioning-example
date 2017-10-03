@@ -23,11 +23,8 @@ import org.springframework.http.*;
 // allow for the PROJO and @RequestBody annotations to be used.
 
 
-
 @RestController
-@EnableAutoConfiguration
 public class Example {
-
     @RequestMapping(value="/",
       method = RequestMethod.POST,
       produces = {"application/vnd.example.v3+json", "application/vnd.example.v2+json"},
@@ -97,9 +94,4 @@ public class Example {
     HelloV2Message helloV2(@RequestBody HelloV2Payload body) {
       return new HelloV2Message(String.format("Hello, %s", body.name));
     }
-
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(Example.class, args);
-    }
-
 }
