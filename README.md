@@ -20,3 +20,33 @@ I have concluded that I prefer using the HTTP Content negotiation headers (Conte
 ```text
 mvn spring-boot:run
 ```
+
+### TODO
+
+* Application Level Integration Tests
+  * Simple (Does not stub out external dependencies because it doesn't have them)
+  * External Dependency (stubs out external service)
+* Behavioral (Mockists use these primarily)
+* State Based (Classicist favor these and use Mocks only for collaboration)
+
+### Testing References
+
+#### Concepts
+
+* https://agilewarrior.wordpress.com/2015/04/18/classical-vs-mockist-testing/
+* https://martinfowler.com/articles/mocksArentStubs.html
+* https://www.thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists
+
+#### Tools
+
+* https://joel-costigliola.github.io/assertj/
+* http://site.mockito.org
+
+#### Tactics
+
+* https://spring.io/guides/gs/testing-web/
+* https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html
+* http://www.baeldung.com/spring-boot-testresttemplate
+* https://dzone.com/articles/unit-and-integration-tests-in-spring-boot
+* http://www.baeldung.com/spring-boot-testing
+
