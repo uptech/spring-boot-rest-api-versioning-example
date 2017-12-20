@@ -21,14 +21,6 @@ I have concluded that I prefer using the HTTP Content negotiation headers (Conte
 mvn spring-boot:run
 ```
 
-### TODO
-
-* Application Level Integration Tests
-  * Simple (Does not stub out external dependencies because it doesn't have them) (done)
-  * External Dependency (stubs out external service)
-* Behavioral (Mockists use these primarily)
-* State Based (Classicist favor these and use Mocks only for collaboration) (done)
-
 ### Testing References
 
 #### Concepts
